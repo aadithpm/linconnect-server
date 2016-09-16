@@ -36,6 +36,20 @@ $ wget --quiet https://raw.github.com/hauckwill/linconnect-server/master/LinConn
 chmod +x install.sh; \
 ./install.sh
 ```
+If chmod returns an error, run the commands with *sudo*. Alternatively, there might be an issue with the filename. To fix that, run :
+
+```bash
+$wget https://raw.github.com/hauckwill/linconnect-server/master/LinConnectServer/install.sh
+```
+
+Note the name of the downloaded shell script (In most cases, it'll be install.sh.2).
+Change permissions and run the script after that.
+
+```bash
+$chmod +x install.sh.2; \
+./install.sh.2
+```
+*Note*: Replace install.sh.2 if the name of your script is different.
 
 To remove LinConnect, delete the ~/.linconnect directory.
         
